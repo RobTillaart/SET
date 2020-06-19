@@ -2,7 +2,7 @@
 //
 //    FILE: set.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.0
+// VERSION: 0.2.1
 //    DATE: 2014-09-11
 // PURPOSE: SET library for Arduino
 //     URL: https://github.com/RobTillaart/SET
@@ -13,7 +13,7 @@
 
 #include <Arduino.h>
 
-#define SET_LIB_VERSION "0.2.0"
+#define SET_LIB_VERSION "0.2.1"
 
 class Set
 {

@@ -1,12 +1,13 @@
 //
 //    FILE: set.cpp
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.0
+// VERSION: 0.2.1
 //    DATE: 2014-09-11
 // PURPOSE: SET library for Arduino
 //     URL: https://github.com/RobTillaart/SET
 //
 // HISTORY:
+// 0.2.1  2020-06-19 fix library.json
 // 0.2.0  2020-05-02 refactored, removed pre 1.0 support
 // 0.1.11 2017-07-16 fix count() --> 16 bit when set is full !
 // 0.1.10 2017-07-16 performance refactor. isEmpty()
