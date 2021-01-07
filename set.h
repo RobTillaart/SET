@@ -21,8 +21,8 @@ public:
     Set(const Set &t);                // create copy Set
 
 
-    void     clear() { clr; };        // future replacement of clr();
-    void     clr();                   // clear the Set
+    void     clear();                 // clear the Set
+    void     clr() { clear(); };      // will become obsolete
     void     invert();                // flip all elements in the Set
     uint16_t count() const;           // return the #elements
     bool     isEmpty();

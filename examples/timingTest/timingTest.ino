@@ -1,7 +1,7 @@
 //
 //    FILE: timingTest.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
+// VERSION: 0.2.2
 // PURPOSE: timing test for set class methods
 //    DATE: 2014-11-09
 //     URL: https://github.com/RobTillaart/SET
@@ -26,9 +26,9 @@ void setup()
   Serial.println();
 
   Serial.println("\n\ntiming test");
-  Serial.print("myset.clr():\t");
+  Serial.print("myset.clear():\t");
   start = micros();
-  myset.clr();
+  myset.clear();
   stop = micros();
   Serial.println(stop - start);
 

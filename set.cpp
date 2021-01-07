@@ -103,7 +103,7 @@ uint16_t Set::count() const
 }
 
 
-void Set::clr()
+void Set::clear()
 {
     memset(_mem, 0, 32);
 }

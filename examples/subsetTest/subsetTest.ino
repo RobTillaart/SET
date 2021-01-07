@@ -1,7 +1,7 @@
 //
 //    FILE: subsetTest.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
+// VERSION: 0.2.2
 // PURPOSE: demo
 //    DATE: 2014-11-09
 //     URL: https://github.com/RobTillaart/SET
@@ -39,7 +39,7 @@ void setup()
 
     Serial.println();
 
-    Serial.println("done...");
+    Serial.println("\ndone...");
     Serial.println();
 }
 
