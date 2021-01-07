@@ -92,7 +92,7 @@ unittest(test_count_has)
 
   for (int i = 0; i < 10; i++)
   {
-    assertEqual(i, A.count());
+    assertEqual(10 - i, A.count());
     A.sub(i);
   }
   assertEqual(0, A.count());
@@ -138,7 +138,7 @@ unittest(test_operator)
 
   C *= B;
   assertTrue( A == A );
-  assertFalse( A != B );
+  assertTrue( A != B );
   assertTrue( C <= B);
 }
 
