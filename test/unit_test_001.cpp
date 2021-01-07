@@ -130,7 +130,7 @@ unittest(test_operator)
 
   C *= B;
   assertTrue( A == A );
-  asssertFalse( A != B );
+  assertFalse( A != B );
   assertTrue( C <= B);
 }
 
