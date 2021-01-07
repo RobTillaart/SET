@@ -4,12 +4,11 @@
 // VERSION: 0.1.3
 // PURPOSE: demo/test Set class
 //    DATE: 2014-11-16
-//     URL:
-//
-// Released to the public domain
-//
+//     URL: https://github.com/RobTillaart/SET
+
 
 #include "set.h"
+
 
 Set setA, setB;
 volatile bool b;

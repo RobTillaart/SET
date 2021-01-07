@@ -4,16 +4,14 @@
 // VERSION: 0.1.00
 // PURPOSE: demo first, next, last, prev
 //    DATE: 2014-11-09
-//     URL:
-//
-// Released to the public domain
-//
+//     URL: https://github.com/RobTillaart/SET
+
 
 #include "set.h"
 
+
 Set myset;
 Set setA, setB;
-
 
 volatile bool b;
 
