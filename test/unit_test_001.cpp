@@ -69,17 +69,25 @@ unittest(test_constructor)
   assertFalse(A.isEmpty());
   assertFalse(A.isFull());
   assertEqual(1, A.count());
+}
+
+
+unittest(test_count_has)
+{
+  fprintf(stderr, "VERSION: %s\n", SET_LIB_VERSION);
+
+  Set A;
 
   A.clear();
   for (int i = 0; i < 10; i++)
   {
-    A.add(i);
     assertEqual(i, A.count());
+    A.add(i);
   }
 
   for (int i = 0; i < 10; i++)
   {
-    assertEqual(i, A.has(i));
+    assertTrue(A.has(i));
   }
 
   for (int i = 0; i < 10; i++)
@@ -112,10 +120,10 @@ unittest(test_operator)
   assertEqual(10, B.count());
   assertEqual(17, C.count());
 
-  C - A - B;
+  C = A - B;
   assertEqual(7, C.count());
 
-  C - A * B;
+  C = A * B;
   assertEqual(3, C.count());
 
   C = A;
