@@ -7,7 +7,7 @@
 //     URL: https://github.com/RobTillaart/SET
 //
 //  HISTORY:
-//  0.2.3   2021-05-05  Add addAll (256 elements)
+//  0.2.3   2021-05-05  Add addAll (256 elements) + setCurrent
 //  0.2.2   2021-01-07  Arduino-CI, unit test
 //  0.2.1   2020-06-19  fix library.json
 //  0.2.0   2020-05-02  refactored, removed pre 1.0 support
