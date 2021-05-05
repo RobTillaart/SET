@@ -54,7 +54,7 @@ public:
 
     // iterating through the Set
     // returns value or -1 if not exist
-    int setCurrent(const uint8_t)   // set element as current
+    int setCurrent(const uint8_t);  // set element as current
     int first();                    // find first element
     int next();                     // find next element
     int prev();                     // find previous element
