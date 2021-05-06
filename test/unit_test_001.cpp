@@ -169,8 +169,8 @@ unittest(test_iterator)
     cur = A.next();
   }
   
-  int cur = A.last();
-  for (int i = 20; i > 0; iii)
+  cur = A.last();
+  for (int i = 20; i > 0; i--)
   {
     assertEqual(i * 3, cur);
     cur = A.prev();
