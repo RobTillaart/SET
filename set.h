@@ -59,7 +59,7 @@ public:
     int next();                     // find next element
     int prev();                     // find previous element
     int last();                     // find last element
-    int getNth();                   // find Nth element in a set (from start)
+    int getNth(const uint8_t n);    // find Nth element in a set (from start)
 
 private:
     uint8_t _mem[32];           // can hold 0..255
