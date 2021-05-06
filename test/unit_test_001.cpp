@@ -176,7 +176,15 @@ unittest(test_iterator)
     cur = A.prev();
   }
   
+  assertEqual(0, A.getNth(1));
+  assertEqual(3, A.getNth(2));
+  assertEqual(6, A.getNth(3));
+  assertEqual(9, A.getNth(4));
   assertEqual(12, A.getNth(5));
+  assertEqual(15, A.getNth(6));
+  assertEqual(18, A.getNth(7));
+  assertEqual(21, A.getNth(8));
+
 }
 
 unittest_main()
