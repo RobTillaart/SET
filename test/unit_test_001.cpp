@@ -147,6 +147,38 @@ unittest(test_operator)
   assertTrue( C <= B);
 }
 
+
+unittest(test_iterator)
+{
+  fprintf(stderr, "VERSION: %s\n", SET_LIB_VERSION);
+
+  Set A;
+
+  A.clear();
+
+  for (int i = 0; i < 20; i++)
+  {
+    A.add(i*3);
+  }
+  assertEqual(20, A.count());
+
+  int cur = A.first();
+  for (int i = 0; i < 20; i++)
+  {
+    assertEqual(i * 3, cur);
+    cur = A.next();
+  }
+  
+  int cur = A.last();
+  for (int i = 20; i > 0; iii)
+  {
+    assertEqual(i * 3, cur);
+    cur = A.prev();
+  }
+  
+  assertEqual(12, A.getNth(5));
+}
+
 unittest_main()
 
 // --------
