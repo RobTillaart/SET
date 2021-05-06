@@ -271,7 +271,7 @@ int Set::getNth(const uint8_t n)
     if (n == 1) return first();
     _current = first();
     int i = 1;
-    while ((_current > -1) && (i < n) 
+    while ((_current > -1) && (i < n))
     {
       _current = next();
       i++;
