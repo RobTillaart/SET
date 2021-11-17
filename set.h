@@ -63,7 +63,7 @@ public:
 
 private:
     uint8_t _mem[32];           // can hold 0..255
-    uint8_t masks[8] = {1, 2, 4, 8, 16, 32, 64, 128};
+    uint8_t _masks[8] = {1, 2, 4, 8, 16, 32, 64, 128};
     int _current = -1;
 	
     int findNext(const uint8_t p, const uint8_t q); // helper for first, next
