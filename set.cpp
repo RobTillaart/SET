@@ -58,24 +58,24 @@ Set::Set(const Set &t)
 //
 // METHODS
 //
-void Set::add(const uint8_t v)
+void Set::add(const uint8_t value)
 {
-    uint8_t idx = v / 8;
-    _mem[idx] |= masks[v & 7];
+    uint8_t idx = value / 8;
+    _mem[idx] |= _masks[value & 7];
 }
 
 
-void Set::sub(const uint8_t v)
+void Set::sub(const uint8_t value)
 {
-    uint8_t idx = v / 8;
-    _mem[idx] &= ~masks[v & 7];
+    uint8_t idx = value / 8;
+    _mem[idx] &= ~_masks[value & 7];
 }
 
 
-void Set::invert(const uint8_t v)
+void Set::invert(const uint8_t value)
 {
-    uint8_t idx = v / 8;
-    _mem[idx] ^= masks[v & 7];
+    uint8_t idx = value / 8;
+    _mem[idx] ^= _masks[value & 7];
 }
 
 
@@ -85,10 +85,10 @@ void Set::addAll()
 }
 
 
-bool Set::has(const uint8_t v)
+bool Set::has(const uint8_t value)
 {
-    uint8_t idx = v / 8;
-    return (_mem[idx] & masks[v & 7]) > 0;
+    uint8_t idx = value / 8;
+    return (_mem[idx] & _masks[value & 7]) > 0;
 }
 
 
@@ -156,12 +156,12 @@ bool Set::isFull()
 }
 
 
-int Set::setCurrent(const uint8_t cur)
+int Set::setCurrent(const uint8_t current)
 {
     _current = -1;
-    if (has(cur))
+    if (has(current))
     {
-      _current = cur;
+      _current = current;
     }
     return _current;
 }
@@ -226,7 +226,7 @@ int Set::findNext(const uint8_t p, uint8_t q)
         uint8_t b = _mem[i];
         if (b != 0)
         {
-            uint8_t mask = 1 << q;  // masks[q]
+            uint8_t mask = 1 << q;  // _masks[q]
             for (uint8_t j = q; j < 8; j++)
             {
                 if (b & mask)
@@ -401,4 +401,6 @@ bool Set::operator <= (const Set &t) const // subSet
     return true;
 }
 
+
 // -- END OF FILE --
+
