@@ -1,7 +1,6 @@
 //
 //    FILE: equalTest.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.2
 // PURPOSE: demo equality operators
 //    DATE: 2014-11-09
 //     URL: https://github.com/RobTillaart/SET
