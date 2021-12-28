@@ -1,7 +1,6 @@
 //
 //    FILE: allTest.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.2
 // PURPOSE: demo/test Set class
 //    DATE: 2014-11-16
 //     URL: https://github.com/RobTillaart/SET
