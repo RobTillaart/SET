@@ -17,9 +17,11 @@ Arduino library to implement a simple SET data structure.
 ## Description
 
 The set library implements the set data structure for integers 0..255.
-This limit is chosen because of the memory limitations of an Arduino UNO, 
+This limit is chosen because of the memory limitations of an Arduino UNO R3, 
 however these numbers can be used as indices to a table of strings or other
 data types.
+
+Feedback as always is welcome.
 
 
 ## Interface
@@ -191,6 +193,7 @@ See the `examples/` folder for complete working examples:
 
 #### Could
 
+#### Wont
 
 
 ## Support
